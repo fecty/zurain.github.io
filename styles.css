@@ -17,8 +17,21 @@
   --fire-engine-red: hsla(350, 96%, 43%, 1);
 }
 
-img {
-  height: 500px;
+.notice{
+  /* display: none; */
+  background-color: var(--cool-gray);
+  width:30vw;
+  height: 10vh;
+  text-align: center;
+  color: var(--fire-engine-red);
+  border-radius: 10px;
+  position: fixed;
+  top:50%;
+  left:50%;
+  opacity: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: bold;
 }
 
 body {
@@ -67,28 +80,24 @@ body {
 
 /* SLIDE STYLES */
 
-.home {
+#home {
   display: flex;
   gap: 10px;
 }
 
-.about-me {
+#about-me {
 }
 
-.skills {
+#skills {
 }
 
-.services {
+#services {
 }
 
-.contact {
+#contact {
 }
 
 /* HOME STYLES */
-.home > img {
-  max-height: 100%;
-  border-radius: 10px;
-}
 .info {
   min-width: 100%;
   height: 100%;
