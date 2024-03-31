@@ -28,9 +28,10 @@ body {
 /* Container body styles*/
 .container {
   margin: 10px;
-  border: 2px solid var(--border);
-  width: clamp(300px, 40vw, 600px);
   padding: 10px;
+
+  border: 2px solid var(--border);
+  width: clamp(400px, 40vw, 600px);
   border-radius: 10px;
 }
 .container p {
@@ -49,7 +50,7 @@ header {
 header > img {
   filter: grayscale(100%);
   object-fit: cover;
-  object-position: 0px -5px;
+  object-position: 0px 0px;
   border-radius: 50%;
   border: 0px solid lightgreen;
   width: 100px;
