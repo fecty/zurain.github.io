@@ -9,11 +9,13 @@
 
 :root {
   /* New Values */
-  --background1: hsla(15, 8%, 31%, 1);
-  --background2: hsl(0, 5%, 64%);
-  --text: rgb(71, 53, 58);
-  --primary: hsla(15, 20%, 96%, 1);
-  --secondary: hsla(15, 4%, 64%, 1);
+  --background1: hsla(235, 21%, 21%, 1);
+  --background2: hsla(197, 24%, 94%, 1);
+  --text: hsla(235, 21%, 21%, 1);
+  --primary: hsla(353, 86%, 54%, 1);
+  --secondary: hsla(350, 96%, 43%, 1);
+  --cool-gray: hsla(218, 17%, 62%, 1);
+
 }
 
 /* Main Styles */
@@ -42,8 +44,8 @@ body::-webkit-scrollbar {
   padding: calc(var(--slide-margin) * 5) 0;
 }
 
-.container::-webkit-scrollbar{
-    display: none;
+.container::-webkit-scrollbar {
+  display: none;
 }
 /* General styles for all the slides */
 .slides {
@@ -67,9 +69,8 @@ body::-webkit-scrollbar {
   font-size: clamp(1rem, 2vmax, 2rem);
 }
 
-.slides p{
-    font-size: clamp(1rem, 1.2vmax, 2rem);
-
+.slides p {
+  font-size: clamp(1rem, 1.2vmax, 2rem);
 }
 
 /* Specific styles for different slides*/
