@@ -1,4 +1,5 @@
-.theme-1{
+/* Themes */
+.theme-1 {
   /* Colors */
   --bg: white;
   --text: black;
@@ -7,7 +8,7 @@
   --border: rgb(0, 0, 0);
 }
 
-.theme-2{
+.theme-2 {
   /* Colors */
   --bg: rgb(255, 248, 224);
   --text: rgb(62, 59, 71);
@@ -15,7 +16,7 @@
   --special: rgb(250, 59, 59);
   --border: rgb(0, 0, 0);
 }
-
+/*General styles*/
 
 *,
 *::before,
@@ -35,8 +36,13 @@ body {
   align-items: center;
   justify-content: center;
 }
-h1{
+
+h1 {
   font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* Container body styles*/
@@ -60,7 +66,27 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
-  
+}
+.title > .name-en{
+  display: none;
+}
+.title > .name-ur{
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+
+  /* width: 100%; */
+  direction: rtl;
+}
+
+
+.title > h2 {
+  color: var(--special);
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 header > img {
@@ -79,11 +105,6 @@ header img:hover {
   transform: scale(1.1);
   /* margin: 10px; */
 }
-
-/* header h2{
-  font-family: "IBM Plex Sans Arabic", sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2rem);
-} */
 
 
 .site-name {
@@ -104,13 +125,11 @@ header img:hover {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
-  
-}
-footer > h1{
   margin-bottom: 10px;
 }
 
-.socials > a{
+
+.socials > a {
   text-decoration: none;
   color: var(--text);
   font-weight: 500;
@@ -120,7 +139,7 @@ footer > h1{
   border-radius: 10px;
   border: 2px solid var(--border);
   background-color: var(--bg);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   padding: 0px 5px;
   display: flex;
   align-items: center;
@@ -139,6 +158,8 @@ footer > h1{
 .social-links:hover {
   transform: scale(1.1);
   /* margin: 0 2%; */
-  border: 2px solid var(--special)
-  
+  border: 2px solid var(--special);
+}
+.disclaimer > h2 {
+  margin-bottom: 10px;
 }
