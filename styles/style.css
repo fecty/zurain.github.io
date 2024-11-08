@@ -9,7 +9,7 @@
   --border: black;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --bg: #191825;
     --bg2: #0f6292;
@@ -19,7 +19,7 @@
     --text-emphasis: #9DF1DF;
     --special2: #39B5E0;
   }
-}
+} */
 
 *,
 *::before,
@@ -47,11 +47,9 @@ h1 {
 h2 {
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
-section p {
-  text-indent: 0.5vw;
-}
-p {
-  margin-bottom: 5px;
+
+.intro p {
+  margin-bottom: 10px;
 }
 
 /* Container body styles*/
@@ -98,6 +96,7 @@ header {
   color: var(--special);
   font-size: clamp(0.75rem, 1.5vw, 1rem);
   font-family: "IBM Plex Sans Arabic", sans-serif;
+  direction: ltr;
 }
 
 header > img {
